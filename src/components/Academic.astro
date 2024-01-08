@@ -1,15 +1,15 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro"
-const EXPERIENCIE = [
+const ACADEMIC = [
   {
     date: "2018 − Actualmente...",
     title: "Ingeniería en Redes y Telecomunicaciones − UAGRM",
     description:
-      "Realización exitosa de proyectos integrales, abarcando infraestructura de red y desarrollo de software. Premiado con beca de excelencia académica por mejor promedio.",
+      "Realización exitosa de proyectos integrales, abarcando infraestructura de red y desarrollo de software. Premiado con beca de excelencia académica por mejor promedio ponderado.",
   },
   {
     date: "2016 − 2020",
-    title: "Inglés − Cursos Autofinanciados de Idioma (UAGRM)",
+    title: "Inglés − Cursos Autofinanciados de Idioma",
     description:
       "Completé exitosamente un curso de Inglés Avanzado, consolidando habilidades tanto en comunicación oral como escrita. Esta experiencia me proporcionó una mayor confianza y fluidez en el idioma, permitiéndome comunicarme de manera efectiva en diversas situaciones y contextos.",
   },
@@ -18,7 +18,7 @@ const EXPERIENCIE = [
 
 <ol class="relative border-s border-gray-200 ml-3">
   {
-    EXPERIENCIE.map((experiencie) => (
+    ACADEMIC.map((experiencie) => (
       <li class="mb-10 ms-4">
         <ExperienceItem {...experiencie} />
       </li>

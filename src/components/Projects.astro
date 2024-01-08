@@ -1,6 +1,9 @@
 ---
+import Linux from "./icons/Linux.astro";
 import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
+import Ubuntu from "./icons/Ubuntu.astro";
+import Grafana from "./icons/Grafana.astro";
 
 const TAGS = {
   NEXT: {
@@ -13,16 +16,31 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  LINUX: {
+    name: "Linux",
+    class: "bg-[#FCC624] text-black",
+    icon: Linux,
+  },
+  UBUNTU: {
+    name: "Ubuntu",
+    class: "bg-[#E95420] text-white",
+    icon: Ubuntu,
+  },
+  GRAFANA: {
+    name: "Grafana",
+    class: "bg-[#F46800] text-white",
+    icon: Grafana,
+  },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Monitoreo de red - Zabbix & Grafana",
     description:
-      "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
+      "Este proyecto implementa un eficiente sistema de monitoreo de red mediante la integración de Grafana y Zabbix. Utilizando Grafana para visualización y Zabbix para la recopilación de datos, proporciona paneles interactivos y alertas personalizadas que permiten una supervisión detallada del rendimiento y la disponibilidad de la infraestructura.",
     link: "https://svgl.vercel.app/",
     github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    image: "https://blog.zabbix.com/wp-content/uploads/2019/11/grafana_cr.jpg",
+    tags: [TAGS.LINUX, TAGS.UBUNTU, TAGS.GRAFANA],
   },
 ]
 ---

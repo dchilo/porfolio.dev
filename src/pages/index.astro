@@ -10,24 +10,28 @@ import Experience from "../components/Experience.astro"
 import Briefcase from "../components/icons/Briefcase.astro"
 import CodeIcon from "../components/icons/Code.astro"
 import Projects from "../components/Projects.astro"
+import School from "../components/icons/School.astro"
+import Academic from "../components/Academic.astro"
 ---
-
+<!--
+        <img
+        class="rounded-full size-12 mb-4"
+        src="#"
+        alt="midudev photo"
+      />
+-->
 <Layout
-  title="Porfolio de midudev - Desarrollador y Programador Web con 15 años de experiencia"
+  title="Porfolio de David Chilo - Ingeniero en Redes y Telecomunicaciones"
   description="Contrata a midudev para crear tu aplicación web o móvil. Desarrollador Web y Creador de Contenido. Especializado en crear aplicaciones únicas."
 >
   <main class="px-4">
     <SectionContainer class="py-44 pb-32">
-      <img
-        class="rounded-full size-12 mb-4"
-        src="/midudev.webp"
-        alt="midudev photo"
-      />
+
       <h1
         class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
       >
-        Hey, soy midudev <a
-          href="https://linkedin.com/in/midudev"
+        Hey, soy David Chilo <a
+          href="https://linkedin.com/in/davidchilo"
           target="_blank"
           rel="noopener"
           class="flex justify-center items-center"
@@ -38,43 +42,43 @@ import Projects from "../components/Projects.astro"
       <h2
         class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
       >
-        <span>+15 años de experiencia.</span><span
+        <span>Egresado de Ingeniería en Redes y Telecomunicaciones.</span><span
           class="text-yellow-800 dark:text-yellow-200"
         >
-          Desarrollador Web y Creador de Contenido</span
+          Ingeniero DevOps</span
         >
          .<span class="text-red-800 dark:text-red-200">
-          De Barcelona, España</span
+          De Santa Cruz, Bolivia</span
         >.
         <span class="text-sky-800 dark:text-sky-200"
-          >Especializado en crear aplicaciones únicas.</span
+          >Especializado en crear soluciones únicas.</span
         >
       </h2>
 
       <nav class="flex gap-4 mt-8 flex-wrap">
-        <SocialPill href="https://linkedin.com/in/midudev">
+        <SocialPill href="https://linkedin.com/in/davidchilo">
           <LinkedInIcon class="size-4 md:size-6" />
            LinkedIn
         </SocialPill>
-        <SocialPill href="https://github.com/midudev">
+        <SocialPill href="https://github.com/dchilo">
           <GitHubIcon class="size-4 md:size-6" />
            GitHub
         </SocialPill>
-        <SocialPill href="mailto:miduga@gmail.com">
+        <SocialPill href="mailto:dchilo22@gmail.com">
           <MailIcon class="size-4 md:size-6" />
-           miduga@gmail.com
+           dchilo22@gmail.com
         </SocialPill>
       </nav>
     </SectionContainer>
 
-    <SectionContainer id="experiencia">
+    <SectionContainer id="academico">
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
-        <Briefcase class="size-7" />
-         Experiencia laboral
+        <School class="size-7" />
+         Estudios
       </h2>
-      <Experience />
+      <Academic />
     </SectionContainer>
 
     <SectionContainer id="proyectos">
